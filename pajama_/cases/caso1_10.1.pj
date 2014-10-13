@@ -1,0 +1,3 @@
+rule foo10(a){
+  case [x,x,x|[x]] -> true
+}

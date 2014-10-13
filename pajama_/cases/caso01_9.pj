@@ -1,0 +1,3 @@
+rule foo9(a){
+  case [x|[]] -> true
+}

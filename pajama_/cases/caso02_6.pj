@@ -1,0 +1,3 @@
+rule foo2(a){
+	case [[z|2],[y|5]|5] -> true
+} 

@@ -1,0 +1,8 @@
+// Crea un rango (array secuencial, acceso dot a expresion)
+// function unshift(a, x){a.unshift(x);return a;}
+rule rangeIterate(n){
+    case [a, b when a>b] -> []
+  | case [m, M]          -> unshift(rangeIterate([m+1, M]), m)
+}
+
+expectEQ("rangeIterate([1,3])", "3,2,1");

@@ -1,0 +1,12 @@
+rule foo8(a){
+  case [] -> true
+}
+rule foo9(a){
+  case [x|[]] -> true
+}
+rule foo10(a){
+  case [1|v] -> v
+}
+rule foo11(a){
+  case [1, v when v>0&&v<5]  -> v+1
+}

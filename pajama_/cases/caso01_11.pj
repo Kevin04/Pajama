@@ -1,0 +1,3 @@
+rule foo11(a){
+  case [1, x when x>0]  -> x+1
+}

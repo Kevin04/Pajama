@@ -1,0 +1,3 @@
+rule foo10(a){
+  case [_|x] -> x
+}

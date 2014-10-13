@@ -1,0 +1,3 @@
+rule foo3(a){
+	case[c | [r]] -> r + c
+} 

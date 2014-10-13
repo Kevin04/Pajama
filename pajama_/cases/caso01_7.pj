@@ -1,0 +1,16 @@
+rule foo(n){
+   case [x, y] -> 1+x*x+y+g(x) // expr --> arithOperation 1,x,y y g(x) arithMonom
+}
+
+rule prefoosum(n){
+   case [x, y] -> 1+x+x+y // expr --> arithOperation 1,x,y y g(x) arithMonom
+}
+
+rule prefoomulA(n){
+   case [x, y] -> 1+x*x+y // expr --> arithOperation 1,x,y y g(x) arithMonom
+}
+
+rule prefoomulB(n){
+   case [x, y] -> x*x+y+1 //[2,3] -> 2*2+3+1=8
+}
+

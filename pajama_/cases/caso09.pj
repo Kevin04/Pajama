@@ -1,0 +1,8 @@
+// Compara dos objetos por una propiedad fija name
+rule compareObjects(o){
+     case [{name:x}, {name:y when y==x}] -> true
+   | case _ -> false
+}
+
+expectEQ('[{name:"juan"}, {name:"juan"}]',"true");
+expectEQ('[{name:"juan"}, {name:"Juan"}]',"false");

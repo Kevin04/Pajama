@@ -1,0 +1,4 @@
+rule factorialCola(a){
+     case [0,r] -> r
+   | case [n,r] ->  factorialCola([n-1, n*r])
+}

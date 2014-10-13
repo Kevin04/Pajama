@@ -1,0 +1,4 @@
+rule factorial(n){
+      case k when k >= 0 -> factorialCola([k, 1])
+	| case k -> 0
+}

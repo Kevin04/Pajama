@@ -1,0 +1,9 @@
+rule foo(n){
+  case n when n>1 -> true
+}
+rule goo(n){
+  case [x,2] ->x
+}
+expectEQ("foo(20)", "true");
+expectEQ("goo([1,2])", "true");
+expectFAIL("foo(1)");

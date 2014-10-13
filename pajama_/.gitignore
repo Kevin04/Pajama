@@ -1,0 +1,6 @@
+*.java~
+*.js~
+*.class~
+*.g4~
+*~
+/.project

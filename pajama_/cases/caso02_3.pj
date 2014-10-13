@@ -1,0 +1,4 @@
+rule largo(a){
+    case [] -> 0
+    | case [_|r] -> largo(r)+1
+}
